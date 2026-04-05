@@ -72,3 +72,13 @@ python checker.py [входной_файл] [выходной_файл] --timeou
 Для портфолио
 
 ```
+
+## 📊 Пример результата
+
+| исходный_url | статус | тайтл | финальный_url | число_редиректов |
+|-------------|--------|-------|---------------|------------------|
+| https://ya.ru | 200 | Яндекс — быстрый поиск в интернете | https://ya.ru/?nr=1&redirect_ts=... | 1 |
+| https://google.com | 200 | Google | https://www.google.com/ | 1 |
+| https://httpbin.org/status/404 | 404 | (нет) | https://httpbin.org/status/404 | 0 |
+| https://httpbin.org/redirect/2 | 200 | (нет) | https://httpbin.org/get | 2 |
+| https://asdasd.ru | ошибка | (нет) | (нет) | 0 |
